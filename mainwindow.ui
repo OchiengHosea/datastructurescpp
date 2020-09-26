@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>150</y>
+      <width>89</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuStart">
+    <property name="title">
+     <string>Start</string>
+    </property>
+    <widget class="QMenu" name="menuData_Structures">
+     <property name="title">
+      <string>Data Structures</string>
+     </property>
+     <addaction name="actionArrays_Linked_Lists_Recursion"/>
+     <addaction name="separator"/>
+     <addaction name="actionAnalysis_tools"/>
+     <addaction name="separator"/>
+    </widget>
+    <addaction name="menuData_Structures"/>
+    <addaction name="separator"/>
+    <addaction name="actionPrograms"/>
+    <addaction name="separator"/>
+   </widget>
+   <addaction name="menuStart"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionPrograms">
+   <property name="text">
+    <string>Programs</string>
+   </property>
+  </action>
+  <action name="actionArrays_Linked_Lists_Recursion">
+   <property name="text">
+    <string>Arrays, Linked Lists, Recursion</string>
+   </property>
+  </action>
+  <action name="actionAnalysis_tools">
+   <property name="text">
+    <string>Analysis tools</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>actionArrays_Linked_Lists_Recursion</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>when_alr_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>when_alr_clicked()</slot>
+ </slots>
+</ui>
