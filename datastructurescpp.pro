@@ -18,17 +18,15 @@ QT += widgets
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    gameentry.cpp \
     main.cpp \
     mainwindow.cpp \
-    scores.cpp \
-    tictactoe.cpp
+    stringlinkedlist.cpp \
+    stringnode.cpp
 
 HEADERS += \
-    gameentry.h \
     mainwindow.h \
-    scores.h \
-    tictactoe.h
+    stringlinkedlist.h \
+    stringnode.h
 
 FORMS += \
     arrays_linked_lists_recursion.ui \
